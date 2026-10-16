@@ -28,7 +28,6 @@ export default function OverlayMenu({ isOpen, onClose }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          {/* Close Button */}
           <button
             type="button"
             onClick={onClose}
@@ -38,7 +37,6 @@ export default function OverlayMenu({ isOpen, onClose }) {
             <FiX />
           </button>
 
-          {/* Navigation Links */}
           <ul className="flex flex-col items-center gap-6 py-20">
             {menuItems.map((item, index) => (
               <motion.li
